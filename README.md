@@ -1,5 +1,3 @@
-[![browser support](https://ci.testling.com/mattdesl/is-undo-redo.png)](https://ci.testling.com/mattdesl/is-undo-redo)
-
 # is-undo-redo
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
@@ -24,8 +22,9 @@ events.on(element, 'keydown', function(ev) {
 
 [![NPM](https://nodei.co/npm/is-undo-redo.png)](https://nodei.co/npm/is-undo-redo/)
 
-### `undoredo.undo(event[, style])`
-### `undoredo.redo(event[, style])`
+
+### `isUndoRedo.undo(event[, style])`
+### `isUndoRedo.redo(event[, style])`
 
 You can specify a `style` string to explicitly allow one keystroke or the other:
 
@@ -33,6 +32,10 @@ You can specify a `style` string to explicitly allow one keystroke or the other:
 - `"windows"` only allows Ctrl+Z and Ctrl+Shift+Z
 
 If no style is specified, both will be accepted. 
+
+### `isUndoRedo(event[, style])`
+
+Returns true if the key event was either undo or redo. 
 
 ## License
 
